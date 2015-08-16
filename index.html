@@ -8,36 +8,31 @@
 		background-size: cover; /*tell the image to cover the screen*/
 		background-position: center; /*centers image...pretty self explanatory :P*/
 	}
-	.gamelogo {
-    clear: both;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align:center;
-	}
-	ul {
-    	list-style-type: none;
-    	margin: 0;
-    	padding: 0;
-    	overflow: hidden;
-	}
-	li {
-    	float: left;
-	}
-	a:link, a:visited {
-    	display: block;
-    	width: 120px;
-    	font-weight: bold;
-    	font-family: Lucida Console;
-    	color: #FFFFFF;
-    	background-color: #007ACC
-    	text-align: center;
-    	padding: 4px;
-    	text-decoration: none;
-    	text-transform: uppercase;
-	}
-	a:hover, a:active {
-		background-color: #005C99;
+	.navbar{
+		ul {
+    		list-style-type: none;
+    		margin: 0;
+    		padding: 0;
+    		overflow: hidden;
+		}
+		li {
+    		float: left;
+		}
+		a:link, a:visited {
+    		display: block;
+    		width: 120px;
+    		font-weight: bold;
+    		font-family: Lucida Console;
+    		color: #FFFFFF;
+    		background-color: #007ACC
+    		text-align: center;
+    		padding: 4px;
+    		text-decoration: none;
+    		text-transform: uppercase;
+		}
+		a:hover, a:active {
+			background-color: #005C99;
+		}
 	}
 </style
 </head>
@@ -47,15 +42,17 @@
 <body>
 	<h1>
 		<center><a href="https://combat-cancer.github.io/">
-			<img src="weblogo.png" class="gamelogo"/>
+			<img src="weblogo.png"/>
 		</a></center>
 	</h1>
-	<ul>  <!--This is where the navigation bar gets created-->
-		<li><a href="https://combat-cancer.github.io//">Home</a></li>
-		<li><a href="news.asp">About Us</a></li>
-		<li><a href="news.asp">About Our Project!</a></li>
-		<li><a href="contact.asp">See the Game</a></li>
-		<li><a href="contact.asp">Thank You</a></li>
-	</ul>
+	<div class="navbar">
+		<ul>  <!--This is where the navigation bar gets created-->
+			<li><a href="https://combat-cancer.github.io//">Home</a></li>
+			<li><a href="news.asp">About Us</a></li>
+			<li><a href="news.asp">About Our Project!</a></li>
+			<li><a href="contact.asp">See the Game</a></li>
+			<li><a href="contact.asp">Thank You</a></li>
+		</ul>
+	</div>
 </body>
 </html>
